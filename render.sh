@@ -22,7 +22,6 @@ ffmpeg \
 -loop 1 -i "3.jpg" \
 -loop 1 -i "4.JPG" \
 -filter_complex "
--filter_complex "
 [1:v]scale=iw*0.7:ih*0.7,format=rgba,zoompan=z='1.0+0.0007*n':d=$((${INTRO_D}*${FPS})):s=${W}x${H}[logo];
 
 [0:v][logo]overlay=(W-w)/2:(H-h)/2:enable='between(t,0,${INTRO_D})'[s1];
