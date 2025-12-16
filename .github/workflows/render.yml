@@ -1,0 +1,22 @@
+name: Render Weihnachtsvideo BGP
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Render video
+        run: bash render.sh
+
+      - name: Upload video
+        uses: actions/upload-artifact@v4
+        with:
+          name: bgp-weihnachtsvideo
+          path: bgp_weihnachten_linkedin_2025.mp4
