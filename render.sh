@@ -48,9 +48,7 @@ enable='between(t,$((${INTRO_D}+${TEXT_D}+${GRUPPE_D})),$((${INTRO_D}+${TEXT_D}+
 [x1][t3]xfade=transition=fade:duration=1:offset=$((${TEAM_START}+4))[x2];
 [x2][t4]xfade=transition=fade:duration=1:offset=$((${TEAM_START}+8))[x3];
 
-[s4][x3]overlay=0:0:enable='between(t,${TEAM_START},${TOTAL})'[mix];
-
-[mix]eq=contrast=1.02:brightness=0.01:saturation=1.05[v];
+[s4][x3]overlay=0:0:enable='between(t,${TEAM_START},${TOTAL})'[v];
 " \
 
 -map "[v]" \
