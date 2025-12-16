@@ -52,8 +52,8 @@ enable='between(t,$((${INTRO_D}+${TEXT_D}+${GRUPPE_D})),$((${INTRO_D}+${TEXT_D}+
 
 [mix]eq=contrast=1.02:brightness=0.01:saturation=1.05,
 colorbalance=rs=0.015:gs=0.005:bs=-0.010,
-fade=t=in:st=0:d=0.8,
-fade=t=out:st=$((${TOTAL}-1)):d=1
+[mix]eq=contrast=1.02:brightness=0.01:saturation=1.05,
+colorbalance=rs=0.015:gs=0.005:bs=-0.010
 [v]
 " \
 
