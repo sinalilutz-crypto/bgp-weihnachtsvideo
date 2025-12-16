@@ -31,12 +31,6 @@ x=(w-text_w)/2:y=(h-text_h)/2:
 fontsize=54:fontcolor=white:line_spacing=10:
 enable='between(t,${INTRO_D},$((${INTRO_D}+${TEXT_D})) )'[s2];
 
-[2:v]scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},
-drawtext=fontfile=${FONT}:text='2026':
-x=(w-text_w)/2:y=h*0.85:
-fontsize=64:fontcolor=white:
-enable='between(t,$((${INTRO_D}+${TEXT_D})),$((${INTRO_D}+${TEXT_D}+${GRUPPE_D})) )'[s3];
-
 [s3]drawtext=fontfile=${FONT}:text='Danke für das entgegengebrachte Vertrauen':
 x=(w-text_w)/2:y=(h-text_h)/2:
 fontsize=58:fontcolor=white:
