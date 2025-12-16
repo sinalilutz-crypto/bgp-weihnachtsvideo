@@ -51,8 +51,6 @@ enable='between(t,$((${INTRO_D}+${TEXT_D}+${GRUPPE_D})),$((${INTRO_D}+${TEXT_D}+
 [s4][x3]overlay=0:0:enable='between(t,${TEAM_START},${TOTAL})'[mix];
 
 [mix]eq=contrast=1.02:brightness=0.01:saturation=1.05,
-colorbalance=rs=0.015:gs=0.005:bs=-0.010,
-[mix]eq=contrast=1.02:brightness=0.01:saturation=1.05,
 colorbalance=rs=0.015:gs=0.005:bs=-0.010
 [v]
 " \
